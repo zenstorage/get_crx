@@ -10,7 +10,8 @@ function getUrl(string) {
 }
 
 function downloadFile(url) {
-	window.location.href = `https://clients2.google.com/service/update2/crx?response=redirect&prodversion=49.0&acceptformat=crx3&x=id%3D${url}%26installsource%3Dondemand%26uc`;
+	// window.location.href = `https://clients2.google.com/service/update2/crx?response=redirect&prodversion=49.0&acceptformat=crx3&x=id%3D${url}%26installsource%3Dondemand%26uc`;
+	window.open(`https://clients2.google.com/service/update2/crx?response=redirect&prodversion=49.0&acceptformat=crx3&x=id%3D${url}%26installsource%3Dondemand%26uc`);
 }
 
 function popupToggle() {
