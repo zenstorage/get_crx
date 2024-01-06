@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body,
+html {
+	height: 100vh;
+	font-family: 'Outfit', sans-serif;
+}
+h1 {
+	color: #ccc9c6;
+	font-size: 30px;
+}
+#container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #212225;
+	background-image: url('https://w.wallhaven.cc/full/gp/wallhaven-gpvpxe.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.3s ease;
+}
+#form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	background-color: rgba(16, 16, 17, 0.95);
+	border: 1px solid rgba(68, 68, 72, 0.8);
+	box-shadow: 0 0 10px rgba(33, 33, 34, 0.8);
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+}
+#url-input {
+	width: 300px;
+	height: 30px;
+	background-color: rgba(23, 24, 26, 0.8);
+	border: 1px solid rgba(74, 74, 82, 0.8);
+	color: #ccc9c6;
+	border-radius: 10px;
+	padding: 0 5px;
+	font-size: 18px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+#url-input:hover {
+	background-color: rgb(21, 22, 24);
+	border: 1px solid rgba(94, 94, 104, 0.8);
+	color: #e0ddda;
+}
+#url-input:focus-visible {
+	outline: none;
+	background-color: rgb(21, 22, 24);
+	border: 1px solid rgba(94, 94, 104, 0.8);
+	color: #e0ddda;
+}
+::selection {
+	background-color: rgba(73, 50, 91, 0.8);
+}
+#download-btn {
+	width: 60px;
+	height: 30px;
+	background-color: rgba(73, 50, 91, 0.8);
+	border: 1px solid rgb(94, 68, 117);
+	border-radius: 5px;
+	color: #ccc9c6;
+	font-size: 18px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+#download-btn:hover {
+	background-color: rgba(73, 50, 91, 1);
+}
+.popup {
+	position: absolute;
+	bottom: 100%;
+	background-color: rgba(16, 16, 17, 0.95);
+	border: 1px solid rgba(68, 68, 72, 0.8);
+	box-shadow: 0 0 10px rgba(33, 33, 34, 0.8);
+	padding: 10px 15px;
+	color: #ccc9c6;
+	border-radius: 8px;
+	user-select: none;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 380px;
+	text-align: center;
+	transition: 0.5s ease;
+}
+.popup-active {
+	transform: translateY(120%);
+}
